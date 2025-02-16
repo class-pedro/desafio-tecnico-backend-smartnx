@@ -1,0 +1,4 @@
+v21.7.3
+
+Arquivo para definir a versão do Node.js que será utilizada no projeto.
+Se tiver o NVM intalado, rode `nvm use` para utilizar a versão definida no arquivo.

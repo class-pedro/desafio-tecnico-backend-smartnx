@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  backend:
+    build: .
+    ports:
+      - 3000:3000
+    environment:
+      - DB_USER=root
+      - DB_PASS=password
+      - DB_NAME=dbdev
+      - DB_HOST=db
+      - JWT_SECRET=f34456f4624c3f653eferd
+    volumes:
+      - ./:/app-backend
+    container_name: commentsapi
+    restart: always
+    depends_on:
+      - db
+
+  db:
+    image: mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=dbdev
+    restart: always
