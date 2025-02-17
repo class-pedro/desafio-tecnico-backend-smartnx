@@ -13,28 +13,31 @@ Este projeto utiliza Node.js, TypeScript, MySQL e Sequelize, e é dockerizado pa
 #### 1. Clone o repositório:
 
     git clone https://github.com/class-pedro/desafio-tecnico-backend-smartnx
-    cd <diretório do repositório>
 
 #### 2. Instale as dependências:
 
+    - Abra o projeto em seu editor de código
+
+#### 3. Instale as dependências:
+
     npm install
 
-#### 3. Suba os containers:
+#### 4. Suba os containers:
 
     docker-compose up -d
 
-#### 4. Gere um Build do projeto:
+#### 5. Gere um Build do projeto:
 
     npx tsc
 
-#### 5. Entre no container da aplicação do backend:
+#### 6. Entre no container da aplicação do backend:
 
     docker exec -it commentsapi sh
 
-#### 6. Rode as migrations:
+#### 7. Rode as migrations:
 
     npx sequelize db:migrate
 
-#### 7. Rode a aplicação:
+#### 8. Saia do terminal do container:
 
-    docker-compose up -d
+    exit
