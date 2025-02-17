@@ -1,5 +1,5 @@
-import { UserRepository } from '../../repository/user/userRepository';
-import { UserService } from '../../service/user/userService';
+import { UserRepository } from '../../repository/user/UserRepository';
+import { UserService } from '../../service/user/UserService';
 import { UserController } from './userController';
 
 const userRepository = new UserRepository();

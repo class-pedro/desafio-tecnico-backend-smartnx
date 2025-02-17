@@ -1,5 +1,5 @@
 import { PostRepository } from '../../repository/post/PostRepository';
-import { UserRepository } from '../../repository/user/userRepository';
+import { UserRepository } from '../../repository/user/UserRepository';
 import { PostService } from '../../service/post/PostService';
 import { PostController } from './postController';
 

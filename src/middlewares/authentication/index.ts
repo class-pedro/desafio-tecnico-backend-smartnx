@@ -1,4 +1,4 @@
-import { UserRepository } from '../../repository/user/userRepository';
+import { UserRepository } from '../../repository/user/UserRepository';
 import { AuthenticationMiddleware } from './authenticationMiddleware';
 
 const usersRepository = new UserRepository();

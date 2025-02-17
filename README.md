@@ -23,10 +23,18 @@ Este projeto utiliza Node.js, TypeScript, MySQL e Sequelize, e é dockerizado pa
 
     docker-compose up -d
 
-#### 4. Rode as migrations:
+#### 4. Gere um Build do projeto:
 
-    docker-compose exec commentsapi npx sequelize-cli db:migrate
+    npx tsc
 
-#### 5. Rode a aplicação:
+#### 5. Entre no container da aplicação do backend:
+
+    docker exec -it commentsapi sh
+
+#### 6. Rode as migrations:
+
+    npx sequelize db:migrate
+
+#### 7. Rode a aplicação:
 
     docker-compose up -d
